@@ -16,7 +16,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = 'django-insecure-c@b7tyhnjq3a0(=l&l-&s=n)cw2kmdt$u324vn3rj@+v7ke&2%'
 
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = ['your-service-name.onrender.com']
+ALLOWED_HOSTS = ['your-service-name.onrender.com', '.render.com']
 
 
 # Application definition
@@ -46,7 +46,7 @@ MIDDLEWARE = [
 
 MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 
-ROOT_URLCONF = 'PortfolioManager.urls'
+ROOT_URLCONF = 'SAManager.urls'
 
 TEMPLATES = [
     {
@@ -115,3 +115,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
