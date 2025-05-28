@@ -63,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'PortfolioManager.wsgi.application'
+WSGI_APPLICATION = 'SAManager.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
