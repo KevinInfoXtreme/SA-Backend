@@ -67,8 +67,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'SAManager.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
-    "https://sidney-art.vercel.app/",
-    "http://localhost:5173",  # for local development
+    "https://sidney-art.vercel.app",  
+    "http://localhost:5173",          # (optionnel pour dev local)
 ]
 
 # Database
