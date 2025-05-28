@@ -16,7 +16,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = 'django-insecure-c@b7tyhnjq3a0(=l&l-&s=n)cw2kmdt$u324vn3rj@+v7ke&2%'
 
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = ['https://sa-backend-j2yy.onrender.com', '.render.com']
+ALLOWED_HOSTS = ['https://sa-backend-j2yy.onrender.com/', '.onrender.com']
 
 
 # Application definition
@@ -67,7 +67,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'SAManager.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "https://sidney-art.vercel.app/",
+    "http://localhost:5173",  # for local development
 ]
 
 # Database
