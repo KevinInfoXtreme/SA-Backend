@@ -3,6 +3,12 @@ from .models import Project,ProjectImage
 
 
 class ProjectImageSerializer(serializers.ModelSerializer):
+    image = serializers.SerializerMethodField()
+
+    def get_image(self, obj):
+        request = self.context.get('request')
+        return request.build_absolute_uri(obj.image.url)
+
     class Meta:
         model = ProjectImage
         fields = ['image']
