@@ -8,6 +8,6 @@ router.register(r'projects', ProjectViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('api/disponibilites/', DisponibilitesAPIView.as_view(), name='disponibilites-api'),
+    path('disponibilites/', DisponibilitesAPIView.as_view(), name='disponibilites-api'),
 ]
 
