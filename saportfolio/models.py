@@ -15,3 +15,11 @@ class ProjectImage(models.Model):
 
     def __str__(self):
         return f"Image for {self.project.title}"
+    
+
+class Disponibilite(models.Model):
+    date = models.DateField(unique=True)
+    is_available = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f"{self.date} - {'Disponible' if self.is_available else 'Indisponible'}"

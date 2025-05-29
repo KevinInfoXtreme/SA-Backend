@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Project,ProjectImage
+from .models import Project,ProjectImage,Disponibilite
 
 
 class ProjectImageSerializer(serializers.ModelSerializer):
@@ -20,3 +20,7 @@ class ProjectSerializer(serializers.ModelSerializer):
         model = Project
         fields = ['id', 'title', 'description', 'images']
 
+class DisponibiliteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Disponibilite
+        fields = ['date', 'is_available']
