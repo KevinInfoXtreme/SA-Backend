@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'saportfolio',
     'cloudinary',
     'cloudinary_storage',
+    'jet.dashboard',  # Optional: for dashboard enhancements
+    'jet',
 ]
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
