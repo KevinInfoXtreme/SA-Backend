@@ -20,6 +20,7 @@ class ProjectImage(models.Model):
 class Disponibilite(models.Model):
     date = models.DateField(unique=True)
     is_available = models.BooleanField(default=True)
+    description = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return f"{self.date} - {'Disponible' if self.is_available else 'Indisponible'}"

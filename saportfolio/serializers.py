@@ -23,4 +23,4 @@ class ProjectSerializer(serializers.ModelSerializer):
 class DisponibiliteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Disponibilite
-        fields = ['date', 'is_available']
+        fields = ['date', 'is_available', 'description']
