@@ -20,6 +20,8 @@ class ProjectImage(models.Model):
 class Disponibilite(models.Model):
     date = models.DateField(unique=True)
     is_available = models.BooleanField(default=True)
+    start_time = models.TimeField(null=True, blank=True)
+    end_time = models.TimeField(null=True, blank=True)
     description = models.TextField(blank=True, null=True)
 
     def __str__(self):
