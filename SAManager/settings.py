@@ -20,7 +20,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 SECRET_KEY = 'django-insecure-c@b7tyhnjq3a0(=l&l-&s=n)cw2kmdt$u324vn3rj@+v7ke&2%'
 
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = ['https://sa-backend-j2yy.onrender.com/', '.onrender.com']
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",")
 
 
 # Application definition

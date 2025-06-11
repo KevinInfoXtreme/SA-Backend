@@ -17,3 +17,8 @@ This project contains the backend for the "SA" application built with Django.
    ```
 
 The container exposes port `8000` and starts the application using `gunicorn SAManager.wsgi:application`.
+
+## Deployment with Coolify
+
+When deploying to Coolify, set the `DJANGO_ALLOWED_HOSTS` environment variable to a
+comma-separated list of allowed domain names.
