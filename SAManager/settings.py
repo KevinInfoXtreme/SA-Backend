@@ -82,7 +82,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'SAManager.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
-    "https://sidney-art.com",  
+    "https://sidney-art.com",
+    "https://api-sidney-art.com",    
     "http://localhost:5173",          # (optionnel pour dev local)
 ]
 
