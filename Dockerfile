@@ -12,5 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . ./
 RUN chmod +x build.sh && ./build.sh
 
-EXPOSE 8000
-CMD ["gunicorn", "SAManager.wsgi:application", "--bind", "0.0.0.0:8000"]
+EXPOSE 8001
+CMD ["gunicorn", "SAManager.wsgi:application", "--bind", "0.0.0.0:8001"]
