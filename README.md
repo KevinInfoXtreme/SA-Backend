@@ -13,7 +13,7 @@ This project contains the backend for the "SA" application built with Django.
 2. **Run the container**
 
    ```bash
-   docker run -p 8000:8000 sa-backend
+   docker run -p 8001:8001 sa-backend
    ```
 
 The container exposes port `8000` and starts the application using `gunicorn SAManager.wsgi:application`.
