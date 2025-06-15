@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'SAManager.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
     "https://sidney-art.com",
-    "https://api-sidney-art.com",    
+    "https://api.sidney-art.com",    
 ]
 
 CSRF_TRUSTED_ORIGINS = ['https://api.sidney-art.com']
