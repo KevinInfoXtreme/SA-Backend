@@ -21,4 +21,5 @@ The container exposes port `8000` and starts the application using `gunicorn SAM
 ## Deployment with Coolify
 
 When deploying to Coolify, set the `DJANGO_ALLOWED_HOSTS` environment variable to a
-comma-separated list of allowed domain names.
+comma-separated list of allowed domain names. Additionally, define the
+`SECRET_KEY` environment variable with the Django secret key used in production.
